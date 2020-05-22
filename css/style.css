@@ -1,0 +1,12 @@
+:root {
+    --yellow: #ffc600;
+}
+body {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 50px;
+  color: blue;
+  margin: 10px;
+}
