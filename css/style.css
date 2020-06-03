@@ -1,12 +1,126 @@
 :root {
-    --yellow: #ffc600;
+  --yellow: #ffc600;
 }
+
 body {
   box-sizing: border-box;
+  position: sticky;
+  margin: 16px;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--yellow);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.navigation-header {
+  margin-bottom: 16px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #DF1717;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.55);
+  width: 100%;
+  padding: 16px;
+
+}
+
+.navigation__link {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  margin-right: 10px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 1);
+
 }
 
 .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 50px;
-  color: blue;
   margin: 10px;
+}
+
+.wrapper {
+  max-width: 1300px;
+  background: white;
+  margin: 0 auto;
+  padding: 16px;
+}
+section {
+ margin-bottom: 15px;
+ padding: 20px;
+ background-color: tomato;
+}
+.card-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+.card-item {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 5px 6px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
+}
+
+  .card-item__header {
+    
+  }
+  
+  .card-item__image {
+    max-width: 100%;
+  }
+ 
+  .card-item__body {
+    padding: 20px;
+  }
+    
+  .card-item__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  .card-item__subtitle {
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 0;
+  }
+  .card-item__intro {
+    margin-bottom: 0;
+  }
+  .card-item__footer {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+
+.home__title,
+.about__title {
+  text-align: center;
+  text-transform: uppercase;
 }
