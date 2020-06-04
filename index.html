@@ -246,9 +246,33 @@
         </article>
       </section>
       <section class="contact">
-        <h1 class="contact__heading">Skontaktuj się z nami</h1>
+        <h1 class="contact__heading">Contact us</h1>
         <p class="contact_description"></p>
-        <input>
+       <form method="POST" action="https://dev.cotenfrontend.pl" class="form">
+         <p>
+           <label for="firstName">Name:</label>
+           <input class="form__item" id="firstName" name="firstName" required placeholder="Please enter your name...">
+      </p>
+      <p>
+        <label for="lastName">Surrname:</label>
+        <input class="form__item" id="lastName" name="lastName" required placeholder="Please enter your surrname...">
+      </p>
+      <p>
+        <label for="email">Your Email:</label>
+        <input class="form__item" id="email" name="email" type="email" required placeholder="Please enter your emial...">
+      </p>
+      <p>
+        <label for="phoneNumber">Phone namber:</label>
+        <input class="form__item" id="phoneNumber" name="phoneNumber" type="tel" placeholder="Please enter your phone number...">
+      </p>
+      <p>
+        <label for="attachment">Attachment:</label>
+        <input class="form__item" id="attachment" name="attachment" type="file">
+      </p>
+       <p>
+       <input class="form__item" type="submit" value="send form" />
+      </p>
+    </form>
       </section>
     </div>
   </main>
