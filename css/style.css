@@ -1,6 +1,6 @@
 :root {
   --yellow: #ffc600;
-  --input-color: linear-gradient(326deg, rgba(237,230,233,1) 0%, rgba(226,225,221,1) 100%);
+  --input-color: linear-gradient(326deg, rgba(237, 230, 233, 1) 0%, rgba(226, 225, 221, 1) 100%);
 
 }
 
@@ -22,7 +22,7 @@ body {
   margin-bottom: 16px;
   background: #dddee2;
   min-height: 70px;
-  top:0;
+  top: 0;
   width: 100%;
 
 }
@@ -30,6 +30,7 @@ body {
 .navigation {
   display: none;
 }
+
 .navigation--open {
   display: block;
 }
@@ -205,6 +206,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -215,7 +217,7 @@ section {
 
 input[type=submit] {
   width: 300px;
-  background: linear-gradient(40deg, rgba(2,0,36,1) 0%, rgba(9,121,55,1) 0%, rgba(52,217,219,0.9292017832523635) 43%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(40deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 55, 1) 0%, rgba(52, 217, 219, 0.9292017832523635) 43%, rgba(0, 212, 255, 1) 100%);
   border-radius: 25px;
   text-transform: uppercase;
   padding: 10px;
@@ -240,13 +242,19 @@ input {
   line-height: 1.5;
 }
 
+.form__item:hover {
+  border: 5px solid #28b934;
+}
+
+
 @media screen and (min-width:600px) and (max-width:999px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px;
     row-gap: 16px;
-    }
+  }
 }
+
 @media screen and (min-width: 1000px) {
   .top-menu {
     display: none;
@@ -274,9 +282,10 @@ input {
     box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 1);
 
   }
+
   .card-container {
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px;
-  row-gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    row-gap: 16px;
   }
 }
