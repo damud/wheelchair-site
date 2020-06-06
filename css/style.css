@@ -1,5 +1,7 @@
 :root {
   --yellow: #ffc600;
+  --input-color: linear-gradient(326deg, rgba(237,230,233,1) 0%, rgba(226,225,221,1) 100%);
+
 }
 
 body {
@@ -189,6 +191,7 @@ section {
 
 .home__title,
 .about__title,
+.contact__heading,
 .wheelchair-section__title {
   text-align: center;
   text-transform: uppercase;
@@ -201,6 +204,40 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: #ffc600;
+}
+
+input[type=submit] {
+  width: 300px;
+  background: linear-gradient(40deg, rgba(2,0,36,1) 0%, rgba(9,121,55,1) 0%, rgba(52,217,219,0.9292017832523635) 43%, rgba(0,212,255,1) 100%);
+  border-radius: 25px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 2px solid #fff;
+  box-shadow: 1px 2px 4px;
+}
+
+input {
+  width: 100%;
+  background: var(--input-color);
+  border-radius: 10% 15% 20% 25%;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 2px solid #fff;
+  box-shadow: 1px 2px 4px .4px;
+
+}
+
+.form__item {
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 @media screen and (min-width:600px) and (max-width:999px) {
